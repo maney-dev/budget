@@ -1,6 +1,3 @@
-
-
-
 // Récupération du formulaire
 var form = document.getElementById('myform');
 
@@ -310,6 +307,6 @@ ElBudget.textContent = somme_budget + "F CFA"
 console.log("somme_budget", somme_budget)
 
 function update (){
-  window.location.href = "file:///C:/Users/AS TECHNOLOGIES/Desktop/GestionDeBudget";
+  window.location.href = "file:///C:/Users/AS TECHNOLOGIES/Desktop/Budget-g";
   
 }

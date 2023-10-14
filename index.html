@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>BUDGET</title>
+
+</head>
+
+<body>
+    <!-- modal. -->
+  
+    <div id="container">
+    <div class="modal" id="ajoutModal">
+    <div class="modal-content">
+        <span class="close">X</span>  
+        <h1><span class=" test">B</span><span class="test2">udget</span></h1> 
+        <h2 class="titre"> gestion de budget</br> AJOUTER DEPENSE</h2>
+
+        <div class="form">
+            <form method="Post" id="myform">
+                <label for="titre">TITRE</label>
+                <input class="form-input" type="text" id="titre" name="TITRE"/>
+
+                <label for="montant">MONTANT</label>
+                <input class="form-input" type="text" id="montant" name="montant"/>
+
+                <button type="submit" class="addDepenseButton">Ajouter</button>
+            </form>
+        </div>
+    </div>
+   </div>
+</div>
+
+    <h1><span class=" test">B</span><span class="test2">udget</span></h1>
+    <h2 class="titre"> gestion de budget</h2>
+    <div class="container">
+
+         <div class="item1">Budget </div>
+         <div  class="item2">Depenses </div>
+         <div class="item3"> Solde</div> 
+         
+         <div class="item4" id="item-budget"></div>
+         <div class="item5" id="item-depense"></div>
+         <div  class="item6" id="item-revenu"></div>
+
+
+    </div>
+    <div class="box">
+        <h3 class="test3"> Liste des depenses</h3>
+        <div  class="btn-add">
+            AJOUTER DEPENSE <i class="fa fa-plus-circle" id ='openModalDep'></i>
+        </div>
+    </div>
+    <p>
+    <div class="tableau-items">
+        <h2 class="items">TITRE</h2>
+        <h2 class="items">MONTANT</h2>
+        <h2 class="items">ACTIONS</h2>
+    </div>
+    <table>
+        <!-- <thead> 
+            <tr>  
+                <th>TITRE </th>
+                <th>MONTANT </th>
+                <th>ACTIONS</th>
+            </tr>
+
+        </thead> -->
+         <tbody id="containers">
+      </tbody>
+</table>
+</p>
+
+<div class="box">
+    <h3 class="test3"> Liste des revenus</h3>
+    <div  class="btn-add">
+        AJOUTER REVENUES <i class="fa fa-plus-circle" id ='openModalRev'></i>
+    </div>
+</div>
+<p>
+    <div class="tableau-items">
+        <h2 class="items">TITRE</h2>
+        <h2 class="items">MONTANT</h2>
+        <h2 class="items">ACTIONS</h2>
+    </div>
+<table class="tableau-style">
+    <!-- <thead> 
+        <tr>  
+            <th>TITRE </th>
+            <th>MONTANT </th>
+            <th>ACTIONS</th>
+        </tr>
+    </thead> -->
+     <tbody id="containers1"> 
+      <!--  -->
+    <!-- modal2. -->
+  
+    <div id="container2">
+        <div class="modal" id="ajoutModal2">
+        <div class="modal-content">
+            <span class="clos">X</span>  
+            <h1><span class=" test">B</span><span class="test2">udget</span></h1> 
+            <h2 class="titre"> gestion de budget</br> AJOUTER REVENUE</h2>
+    
+            
+            <div class="form">
+                <form method="Post" id="myform1">
+                    <label for="titre">TITRE</label>
+                    <input class="form-input" type="text" id="titre2" name="TITRE"/>
+    
+                    <label for="montant">MONTANT</label>
+                    <input class="form-input" type="text" id="montant2" name="montant"/>
+    
+                    <button type="submit" class="addRevenueButton">Ajouter</button>
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+    <!-- <tr>
+        <td> Salaire</td>
+        <td> 300.000 F CFA</td>
+        <td><button>Supprimer</button></td>
+    </tr>
+    
+        <tr>
+            <td> Bussiness</td>
+            <td> 100.000 F CFA</td>
+            <td> <button>Supprimer</button></td>
+        </tr>
+            <tr>
+                <td> Bonus </td>
+                <td>30.000 F CFA </td>
+                <td><button>Supprimer</button> </td>
+            </tr> -->
+  </tbody>
+</table>
+</p>
+<script src="index.js"></script>
+</body>
+</html>
